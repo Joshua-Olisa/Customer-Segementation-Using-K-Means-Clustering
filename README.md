@@ -118,7 +118,7 @@ ggplot(gender_data, aes(x = "", y = percentage, fill = Gender)) +
   theme_void()  
 ```
 
-![](Readme-File_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![Rplot](https://github.com/user-attachments/assets/07a36460-d714-46fb-8977-537b8a7e6f5c)
 
 #### Histogram Distribution of Age, Annual Income and Spending Score
 
@@ -131,7 +131,7 @@ hist(customer_data$Age,
      labels = TRUE)
 ```
 
-![](Readme-File_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![Rplot01](https://github.com/user-attachments/assets/3768f321-384f-4ce0-a74d-0fa1cf6771a8)
 
 ``` r
 #Anuual Income
@@ -142,7 +142,7 @@ hist(customer_data$Annual.Income..k..,
      labels = TRUE)
 ```
 
-![](Readme-File_files/figure-gfm/unnamed-chunk-2-2.png)<!-- -->
+![Rplot02](https://github.com/user-attachments/assets/fdd749de-6752-45ee-89e8-d2125a17b0d6)
 
 ``` r
 #Spending score 
@@ -153,7 +153,7 @@ hist(customer_data$Spending.Score..1.100.,
      labels = TRUE)
 ```
 
-![](Readme-File_files/figure-gfm/unnamed-chunk-2-3.png)<!-- -->
+![Rplot03](https://github.com/user-attachments/assets/b819fc2e-130c-4c47-8270-f8e478d155)
 
 ### Clustering
 
@@ -169,11 +169,10 @@ different clusters are quite different from each other.
 
 The steps followed are
 
-#### 1. Find the optimal number of clusters
+* Find the optimal number of clusters
+* Perform K-Means Clustering with Number of cluster K.
 
-#### 2. Perform K-Means Clustering with Number of cluster K.
-
-#### 1. Find the optimal number of clusters
+Find the optimal number of clusters
 
 To perform k-means clustering in R we can use the built-in kmeans()
 function. I used to different methods to find the optimal number of
@@ -201,7 +200,7 @@ plot(k_values, ics_values,
      ylab = "Total intra-cluster sum of squares")
 ```
 
-![](Readme-File_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![Rplot04](https://github.com/user-attachments/assets/bf8c24b5-bf29-48ad-b423-65d69d86e391)
 
 ##### Gap Statistics Method
 
@@ -219,9 +218,9 @@ stat_gap <- clusGap(customer_data[,3:5], FUN = kmeans, nstart = 25,
 fviz_gap_stat(stat_gap)
 ```
 
-![](Readme-File_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![Rplot05](https://github.com/user-attachments/assets/88023074-bfbb-478a-bf3a-5188cc0911ea)
 
-The optimal number of cluster is 5 (Make bold)
+From the various methods the optimal number of cluster is **Five**
 
 ## 4. Share
 
