@@ -193,11 +193,6 @@ plot(k_values, ics_values,
 ``` r
 library(cluster)
 library(factoextra)
-```
-
-    ## Welcome! Want to learn more? See two factoextra-related books at https://goo.gl/ve3WBa
-
-``` r
 set.seed(125)
 stat_gap <- clusGap(customer_data[,3:5], FUN = kmeans, nstart = 25,
                     K.max = 10, B = 50)
