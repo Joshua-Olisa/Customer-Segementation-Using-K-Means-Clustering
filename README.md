@@ -224,11 +224,11 @@ ggplot(customer_data, aes(x = Annual.Income..k.., y = Spending.Score..1.100.)) +
   geom_point(stat = 'identity', aes(color = as.factor(k5$cluster))) +
   scale_color_discrete(name = " ",
                        breaks = c("1","2","3","4","5","6"),
-                       labels = c("Cluster 1", "Cluster 2", "Cluster 3", "Cluster 4", "Cluster 5", "Cluster 6")) +
+                       labels = c("Average Spender with Average income", "Affluent High Spenders", "Low-income Low Spenders", "Budget-Conscious High Spenders", "Wealthy Low Spenders", "Cluster 6")) +
   ggtitle("Segements of Mall Customers", subtitle = "Using K-means Clustering")
 ```
 
-![Rplot06](https://github.com/user-attachments/assets/fc8a4db4-f12e-446a-83ab-55b5025771d7)
+![Rplot06](https://github.com/user-attachments/assets/78a0b36f-0944-469d-8684-839310ee7f35)
 
 ``` r
 # cluster of Annual income against Age
@@ -242,20 +242,57 @@ ggplot(customer_data, aes(x = Annual.Income..k.., y = Age)) +
 
 ![Rplot07](https://github.com/user-attachments/assets/8370673d-93d4-4757-bd50-cb9a0108899c)
 
+``` r
+ggplot(customer_data, aes(x = Spending.Score..1.100., y = Age)) +
+  geom_point(stat = 'identity', aes(color = as.factor(k5$cluster))) +
+  scale_color_discrete(name = " ",
+                       breaks = c("1","2","3","4","5","6"),
+                       labels = c("Cluster 1", "Cluster 2", "Cluster 3", "Cluster 4", "Cluster 5", "Cluster 6")) +
+  ggtitle("Segements of Mall Customers", subtitle = "Using K-means Clustering")
+```
+
+![Rplot08](https://github.com/user-attachments/assets/0e65d812-716a-4cd8-a4f1-1b8ffba40661)
+
 ## 5. Act
 
 [Back to Top](#author-Joshua-Olisa)
 
-Conclusion based on our analysis: - Sedentary make up a significant
-portion, 81% of users daily active minutes. Users spend on avg 12 hours
-a day in sedentary minutes, 4 hours lightly active, and only half-hour
-in fairly + very active! - Sedentary minutes took up the majority of
-participants’ days and were fairly consistent throughout the week. -
-Saturdays, Monday and Wednesday the users take the most steps. - Users
-who take more steps per day are more likely to engage in “very active
-minutes”
+Conclusion based on our analysis: 
+- The clear clustering based on Annual Income vs. Spending Score suggests a meaningful relationship between these two variables. In general, people with similar income levels tend to exhibit similar spending behaviors. This makes sense because spending power is often directly tied to income, creating distinct shopper profiles such as high-income high-spenders, low-income low-spenders, and so on.
+- The fact that Age didn't lead to distinct clusters with Annual Income or Spending Score suggests that age is not a dominant factor in determining customer segmentation in your dataset. In other words, individuals of different ages may share similar income levels and spending behaviors.
+This could indicate that shopping habits (in terms of income and spending) are less influenced by age and more by lifestyle, financial capacity, or other factors like personal preferences and priorities. It’s possible that Age interacts with other variables (like Income and Spending Score) in more complex ways
 
 ## Recommendations
+Since the is only clear clustering and strong correlation between annual income and spending score and not so strong a relationship with age i would focus less the ages of the customers. Here are my recommedation of the 5 distinct cluster groups
+- Affluent High Spenders (High Income, High Spending Score): These are likely luxury or premium shoppers with significant purchasing power.
+Recommendations:
+Focus on Premium Products/Services: Promote luxury, exclusive, or high-end products to this group, emphasizing quality, prestige, and status.
+Loyalty Programs: Introduce VIP programs, exclusive memberships, or rewards for frequent purchases.
 
-Data collection: Prioritize the collection of comprehensive user data,
+- Budget-Conscious High Spenders (Low Income, High Spending Score): These shoppers prioritize spending despite having lower incomes, possibly due to lifestyle or aspirational purchases.
+Recommendations:
+Value-Based Marketing: Highlight offers, discounts, and value-driven products. Focus on promotions like “luxury for less” or installment-based purchasing options.
+Installment Plans/Financing Options: Provide financing plans or "buy now, pay later" options to allow them to afford higher-end products while managing their budget.
+Product Bundles: Offer bundled deals that create value for their spending, e.g., multiple products at a discounted rate or product + service combinations.
+
+- Wealthy Low Spenders (High Income, Low Spending Score): These customers have high purchasing power but tend to be more conservative or selective in their spending.
+They might prioritize savings or only spend on essential or meaningful purchases.
+Recommendations:
+Promote Exclusive Offers and Scarcity: Use limited-edition products or “once-in-a-lifetime” deals to tap into their selective buying nature.
+Investment Products: Focus on promoting durable, high-quality, or investment-type products that offer long-term value.
+Sustainability and Social Responsibility: Appeal to their potential interest in brands that are socially responsible, eco-friendly, or support philanthropic causes.
+
+- Low-Income Low Spenders (Low Income, Low Spending Score): This group has limited disposable income and tends to spend conservatively and are likely more sensitive to price and may prioritize essential purchases.
+Recommendations:
+Budget-Friendly Options: Emphasize affordability, discounts, and essential products that match their needs. Promote products with the highest value for the lowest price.
+Discounts and Promotions: Use price cuts, coupons, and loyalty rewards to encourage more frequent spending.
+Focus on Necessities: Market everyday items, basics, and low-cost alternatives that appeal to their budget-conscious mindset.
+Engagement through Referrals: Offer referral programs or small incentives for sharing with friends, since word-of-mouth may resonate with this group.
+
+- Average Spenders with Average Income (Average Income, Average Spending Score): These shoppers are the middle of the road—neither extravagant nor overly conservative in their spending. They represent the mass market and likely make regular purchases without excessive indulgence.
+Recommendations:
+Wide Appeal Marketing: Focus on campaigns that emphasize reliability, quality, and fair pricing. They will respond well to solid value without extremes.
+Promote Bestsellers and Popular Products: Highlight products with broad appeal that are already proven to sell well across a diverse customer base.
+Loyalty Programs: Offer reward programs to increase engagement and encourage repeat purchases.
+Seasonal Promotions: Utilize seasonal sales (e.g., back-to-school, holiday sales) to drive purchases. These customers may wait for the right time or occasion to spend.
 
