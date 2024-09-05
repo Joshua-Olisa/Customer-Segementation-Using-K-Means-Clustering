@@ -1,6 +1,3 @@
-Custommer Segementation using KMeans Clustering in R
-================
-
 # Customer Segmentation using K means Clustering in R
 
 ##### Author: Joshua Olisa
@@ -9,11 +6,9 @@ Custommer Segementation using KMeans Clustering in R
 
 ## Problem Statment
 
-You wish to identify the most important shopping groups based on income,
-age, spending score. The goal is to understand the target customers for
-the marketing team to plan a strategy.
+You wish to identify the most important shopping groups based on income, age, spending score. The goal is to understand the target customers for the marketing team to plan a strategy.
 
-## The approach
+## My approach
 
 ### [Prepare](#1-prepare)
 
