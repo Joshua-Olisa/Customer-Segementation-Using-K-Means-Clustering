@@ -265,9 +265,9 @@ This could indicate that shopping habits (in terms of income and spending) are l
 ## Recommendations
 Since the is only clear clustering and strong correlation between annual income and spending score and not so strong a relationship with age i would focus less the ages of the customers. Here are my recommedation of the 5 distinct cluster groups
 - Affluent High Spenders (High Income, High Spending Score): These are likely luxury or premium shoppers with significant purchasing power.
-Recommendations:
-Focus on Premium Products/Services: Promote luxury, exclusive, or high-end products to this group, emphasizing quality, prestige, and status.
-Loyalty Programs: Introduce VIP programs, exclusive memberships, or rewards for frequent purchases.
+    Recommendations:
+          - Focus on Premium Products/Services: Promote luxury, exclusive, or high-end products to this group, emphasizing quality, prestige, and status.
+          - Loyalty Programs: Introduce VIP programs, exclusive memberships, or rewards for frequent purchases.
 
 - Budget-Conscious High Spenders (Low Income, High Spending Score): These shoppers prioritize spending despite having lower incomes, possibly due to lifestyle or aspirational purchases.
    Recommendations:
