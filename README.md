@@ -4,7 +4,7 @@
 
 ## Problem Statment
 
-The main goal is to identify the most important shopping groups based on income, age, spending score. This is will help the marketing team to plan and develop a taliored strategy for different customer groups
+The main goal is to identify the most important shopping groups based on income, age, spending score and provide recommendations to the marketing team to help develop a tailored strategy for different customer groups
 
 ## My approach
 
