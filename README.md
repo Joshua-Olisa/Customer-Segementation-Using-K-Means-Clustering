@@ -100,7 +100,8 @@ ggplot(gender_data, aes(x = "", y = percentage, fill = Gender)) +
   # Convert bar chart into a pie chart
   geom_text(aes(label = label),
             position = position_stack(vjust = 0.5), color = "white") +
-  labs(title = "Pie Chart Showing the Gender Distribution") +                              # Add title
+  labs(title = "Pie Chart Showing the Gender Distribution") +
+  # Add title
   theme_void()  
 ```
 
