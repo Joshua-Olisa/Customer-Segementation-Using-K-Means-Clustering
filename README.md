@@ -5,7 +5,8 @@
 
 
 ## Problem Statment
- 
+The main aim is to identify the most important shopping groups based on income, age, spending score and understand the target customers in order for the marketing team to plan a strategy.
+
 ## The approach
 
 ### [Prepare](#1-prepare)
