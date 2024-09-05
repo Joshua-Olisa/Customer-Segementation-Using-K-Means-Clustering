@@ -118,7 +118,7 @@ ggplot(gender_data, aes(x = "", y = percentage, fill = Gender)) +
   theme_void()  
 ```
 
-![Rplot](https://github.com/user-attachments/assets/07a36460-d714-46fb-8977-537b8a7e6f5c)
+![Rplot](https://github.com/user-attachments/assets/ac6d9688-b921-4abe-89d2-d6ca259dc464)
 
 #### Histogram Distribution of Age, Annual Income and Spending Score
 
@@ -131,7 +131,7 @@ hist(customer_data$Age,
      labels = TRUE)
 ```
 
-![Rplot01](https://github.com/user-attachments/assets/3768f321-384f-4ce0-a74d-0fa1cf6771a8)
+![Rplot01](https://github.com/user-attachments/assets/08d8a15d-40ee-4b66-be71-87d28cb6a1db)
 
 ``` r
 #Anuual Income
@@ -142,7 +142,7 @@ hist(customer_data$Annual.Income..k..,
      labels = TRUE)
 ```
 
-![Rplot02](https://github.com/user-attachments/assets/fdd749de-6752-45ee-89e8-d2125a17b0d6)
+![Rplot02](https://github.com/user-attachments/assets/997935a2-a01f-4c2a-a336-59b5f3a1ea5e)
 
 ``` r
 #Spending score 
@@ -153,7 +153,7 @@ hist(customer_data$Spending.Score..1.100.,
      labels = TRUE)
 ```
 
-![Rplot03](https://github.com/user-attachments/assets/b819fc2e-130c-4c47-8270-f8e478d155)
+![Rplot03](https://github.com/user-attachments/assets/b21e1f8b-411d-46c2-911a-02085d95a625)
 
 ### Clustering
 
@@ -200,7 +200,7 @@ plot(k_values, ics_values,
      ylab = "Total intra-cluster sum of squares")
 ```
 
-![Rplot04](https://github.com/user-attachments/assets/bf8c24b5-bf29-48ad-b423-65d69d86e391)
+![Rplot04](https://github.com/user-attachments/assets/eb08bbf7-264b-4840-91b8-3af56fbf612f)
 
 ##### Gap Statistics Method
 
@@ -218,7 +218,7 @@ stat_gap <- clusGap(customer_data[,3:5], FUN = kmeans, nstart = 25,
 fviz_gap_stat(stat_gap)
 ```
 
-![Rplot05](https://github.com/user-attachments/assets/88023074-bfbb-478a-bf3a-5188cc0911ea)
+![Rplot05](https://github.com/user-attachments/assets/f01f1aa4-eba0-476b-adbc-7c3c3ee3900d)
 
 From the various methods the optimal number of cluster is **Five**
 
