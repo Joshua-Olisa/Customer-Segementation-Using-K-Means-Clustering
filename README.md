@@ -257,7 +257,7 @@ ggplot(customer_data, aes(x = Spending.Score..1.100., y = Age)) +
 
 [Back to Top](#author-Joshua-Olisa)
 
-Conclusion based on our analysis: 
+## Conclusion 
 - The clear clustering based on Annual Income vs. Spending Score suggests a meaningful relationship between these two variables. In general, people with similar income levels tend to exhibit similar spending behaviors. This makes sense because spending power is often directly tied to income, creating distinct shopper profiles such as high-income high-spenders, low-income low-spenders, and so on.
 - The fact that Age didn't lead to distinct clusters with Annual Income or Spending Score suggests that age is not a dominant factor in determining customer segmentation in your dataset. In other words, individuals of different ages may share similar income levels and spending behaviors.
 This could indicate that shopping habits (in terms of income and spending) are less influenced by age and more by lifestyle, financial capacity, or other factors like personal preferences and priorities. It’s possible that Age interacts with other variables (like Income and Spending Score) in more complex ways
