@@ -6,7 +6,7 @@
 
 ## Problem Statment
 
-You wish to identify the most important shopping groups based on income, age, spending score. The goal is to understand the target customers for the marketing team to plan a strategy.
+The main goal is to identify the most important shopping groups based on income, age, spending score. This is will help the marketing team to plan and develop a taliored strategy for different customer groups
 
 ## My approach
 
@@ -32,20 +32,6 @@ Data Source: 200 Records from Vijay Choudhary:
 ``` r
 ##### Load Libraries
 library(tidyverse)
-```
-
-    ## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-    ## ✔ dplyr     1.1.4     ✔ readr     2.1.5
-    ## ✔ forcats   1.0.0     ✔ stringr   1.5.1
-    ## ✔ ggplot2   3.5.1     ✔ tibble    3.2.1
-    ## ✔ lubridate 1.9.3     ✔ tidyr     1.3.1
-    ## ✔ purrr     1.0.2     
-    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter() masks stats::filter()
-    ## ✖ dplyr::lag()    masks stats::lag()
-    ## ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-
-``` r
 ##### Load the data set
 customer_data <- read.csv("Mall_Customers.csv ")
 str(customer_data)
@@ -260,8 +246,6 @@ ggplot(customer_data, aes(x = Annual.Income..k.., y = Age)) +
 
 ![Rplot07](https://github.com/user-attachments/assets/8370673d-93d4-4757-bd50-cb9a0108899c)
 
-### [Bellabeat Data Analysis Dashboard](https://public.tableau.com/app/profile/joshua.olisa.emodoh/viz/BellaBeats_17250435748210/Dashboard1)
-
 ## 5. Act
 
 [Back to Top](#author-Joshua-Olisa)
@@ -278,10 +262,4 @@ minutes”
 ## Recommendations
 
 Data collection: Prioritize the collection of comprehensive user data,
-including body fat percentage, demographic data, to improve the accuracy
-and depth of analysis on smart devices. Encourage users to use a
-wifi-connected scale instead of manual weight entries.
 
-Educational healthy style campaign encourages users to have short active
-exercises during the week, longer during the weekends, especially on
-Sunday where we see the lowest steps and most sedentary minutes.
