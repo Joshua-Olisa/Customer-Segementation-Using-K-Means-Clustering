@@ -179,7 +179,7 @@ function. I used to different methods to find the optimal number of
 clusters to the validity of the answer. These methods are Elbow method
 and Gap Statistics method
 
-##### Elbow method
+**Elbow method**
 
 ``` r
 library(purrr)
@@ -202,7 +202,7 @@ plot(k_values, ics_values,
 
 ![Rplot04](https://github.com/user-attachments/assets/eb08bbf7-264b-4840-91b8-3af56fbf612f)
 
-##### Gap Statistics Method
+**Gap Statistics Method**
 
 ``` r
 library(cluster)
@@ -226,18 +226,39 @@ From the various methods the optimal number of cluster is **Five**
 
 [Back to Top](#author-Joshua-Olisa)
 
-    ## Importance of components:
-    ##                            PC1     PC2     PC3
-    ## Standard deviation     26.4625 26.1597 12.9317
-    ## Proportion of Variance  0.4512  0.4410  0.1078
-    ## Cumulative Proportion   0.4512  0.8922  1.0000
+```
+k5 <-  kmeans(customer_data[,3:5],5,iter.max = 100, nstart = 50, algorithm = "Lloyd")
 
-    ##                               PC1        PC2
-    ## Age                     0.1889742 -0.1309652
-    ## Annual.Income..k..     -0.5886410 -0.8083757
-    ## Spending.Score..1.100. -0.7859965  0.5739136
+#Visualizing the clustering results using the first two principle components
+pccluster = prcomp(customer_data[,3:5],scale = FALSE)
+summary(pccluster)
+pccluster$rotation[,1:2]
+```
 
-![](Readme-File_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->![](Readme-File_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->
+``` r
+# cluster of Annual Income against Spending Score
+set.seed(1)
+ggplot(customer_data, aes(x = Annual.Income..k.., y = Spending.Score..1.100.)) +
+  geom_point(stat = 'identity', aes(color = as.factor(k5$cluster))) +
+  scale_color_discrete(name = " ",
+                       breaks = c("1","2","3","4","5","6"),
+                       labels = c("Cluster 1", "Cluster 2", "Cluster 3", "Cluster 4", "Cluster 5", "Cluster 6")) +
+  ggtitle("Segements of Mall Customers", subtitle = "Using K-means Clustering")
+```
+
+![Rplot06](https://github.com/user-attachments/assets/fc8a4db4-f12e-446a-83ab-55b5025771d7)
+
+``` r
+# cluster of Annual income against Age
+ggplot(customer_data, aes(x = Annual.Income..k.., y = Age)) +
+  geom_point(stat = 'identity', aes(color = as.factor(k5$cluster))) +
+  scale_color_discrete(name = " ",
+                       breaks = c("1","2","3","4","5","6"),
+                       labels = c("Cluster 1", "Cluster 2", "Cluster 3", "Cluster 4", "Cluster 5", "Cluster 6")) +
+  ggtitle("Segements of Mall Customers", subtitle = "Using K-means Clustering")
+```
+
+![Rplot07](https://github.com/user-attachments/assets/8370673d-93d4-4757-bd50-cb9a0108899c)
 
 ### [Bellabeat Data Analysis Dashboard](https://public.tableau.com/app/profile/joshua.olisa.emodoh/viz/BellaBeats_17250435748210/Dashboard1)
 
