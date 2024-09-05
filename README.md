@@ -265,14 +265,14 @@ This could indicate that shopping habits (in terms of income and spending) are l
 ## Recommendations
 Since the is only clear clustering and strong correlation between annual income and spending score and not so strong a relationship with age i would focus less the ages of the customers. Here are my recommedation of the 5 distinct cluster groups
 
-### Affluent High Spenders (High Income, High Spending Score)
+### 1. Affluent High Spenders (High Income, High Spending Score)
 These are likely luxury or premium shoppers with significant purchasing power.
 
 Recommendations:
 - Focus on Premium Products/Services: Promote luxury, exclusive, or high-end products to this group, emphasizing quality, prestige, and status.
 - Loyalty Programs: Introduce VIP programs, exclusive memberships, or rewards for frequent purchases.
 
-### Budget-Conscious High Spenders (Low Income, High Spending Score)
+### 2. Budget-Conscious High Spenders (Low Income, High Spending Score)
 These shoppers prioritize spending despite having lower incomes, possibly due to lifestyle or aspirational purchases.
 
 Recommendations:
@@ -280,7 +280,7 @@ Recommendations:
  - Installment Plans/Financing Options: Provide financing plans or "buy now, pay later" options to allow them to afford higher-end products while managing their budget.
  - Product Bundles: Offer bundled deals that create value for their spending, e.g., multiple products at a discounted rate or product + service combinations.
 
-### Wealthy Low Spenders (High Income, Low Spending Score)
+### 3. Wealthy Low Spenders (High Income, Low Spending Score)
 These customers have high purchasing power but tend to be more conservative or selective in their spending.They might prioritize savings or only spend on essential or meaningful purchases.
 
 Recommendations:
@@ -288,7 +288,7 @@ Recommendations:
 - Investment Products: Focus on promoting durable, high-quality, or investment-type products that offer long-term value.
 - Sustainability and Social Responsibility: Appeal to their potential interest in brands that are socially responsible, eco-friendly, or support philanthropic causes.
 
-### Low-Income Low Spenders (Low Income, Low Spending Score)
+### 4. Low-Income Low Spenders (Low Income, Low Spending Score)
 This group has limited disposable income and tends to spend conservatively and are likely more sensitive to price and may prioritize essential purchases.
 
 Recommendations:
@@ -297,7 +297,7 @@ Recommendations:
 - Focus on Necessities: Market everyday items, basics, and low-cost alternatives that appeal to their budget-conscious mindset.
 - Engagement through Referrals: Offer referral programs or small incentives for sharing with friends, since word-of-mouth may resonate with this group.
 
-### Average Spenders with Average Income (Average Income, Average Spending Score)
+### 5. Average Spenders with Average Income (Average Income, Average Spending Score)
 These shoppers are the middle of the road—neither extravagant nor overly conservative in their spending. They represent the mass market and likely make regular purchases without excessive indulgence.
 
 Recommendations:
