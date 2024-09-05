@@ -1,8 +1,3 @@
----
-title: "Custommer Segementation using KMeans Clustering in R"
-output: github_document
----
-
 # Customer Segmentation using K means Clustering in R 
 ##### Author: Joshua Olisa
 
@@ -10,8 +5,6 @@ output: github_document
 
 
 ## Problem Statment
-You wish to identify the most important shopping groups based on income, age, spending score. The goal is to understand the target customers for the marketing team to plan a strategy.
-
  
 ## The approach
 
