@@ -2,8 +2,6 @@
 
 ##### Author: Joshua Olisa
 
-##### [Tableau Dashboard](https://public.tableau.com/app/profile/joshua.olisa.emodoh/viz/BellaBeats_17250435748210/Dashboard1)
-
 ## Problem Statment
 
 The main goal is to identify the most important shopping groups based on income, age, spending score. This is will help the marketing team to plan and develop a taliored strategy for different customer groups
