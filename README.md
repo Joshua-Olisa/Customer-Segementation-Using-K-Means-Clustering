@@ -270,10 +270,10 @@ Focus on Premium Products/Services: Promote luxury, exclusive, or high-end produ
 Loyalty Programs: Introduce VIP programs, exclusive memberships, or rewards for frequent purchases.
 
 - Budget-Conscious High Spenders (Low Income, High Spending Score): These shoppers prioritize spending despite having lower incomes, possibly due to lifestyle or aspirational purchases.
-Recommendations:
-Value-Based Marketing: Highlight offers, discounts, and value-driven products. Focus on promotions like “luxury for less” or installment-based purchasing options.
-Installment Plans/Financing Options: Provide financing plans or "buy now, pay later" options to allow them to afford higher-end products while managing their budget.
-Product Bundles: Offer bundled deals that create value for their spending, e.g., multiple products at a discounted rate or product + service combinations.
+   Recommendations:
+ - Value-Based Marketing: Highlight offers, discounts, and value-driven products. Focus on promotions like “luxury for less” or installment-based purchasing options.
+ - Installment Plans/Financing Options: Provide financing plans or "buy now, pay later" options to allow them to afford higher-end products while managing their budget.
+ - Product Bundles: Offer bundled deals that create value for their spending, e.g., multiple products at a discounted rate or product + service combinations.
 
 - Wealthy Low Spenders (High Income, Low Spending Score): These customers have high purchasing power but tend to be more conservative or selective in their spending.
 They might prioritize savings or only spend on essential or meaningful purchases.
